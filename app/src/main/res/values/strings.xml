@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LyNgocLong_Bai01</string>
+    <string name="xin_chao">Lý Ngọc Long xin chào!</string>
+    <string name="chuc_cb">Chúc các bạn học tốt</string>
+    <string name="answer_my">Answer My</string>
+    <string name="questions">Questions</string>
+    <string name="play">Play</string>
+    <string name="highscore">HighScore</string>
+    <string name="player">Player</string>
+    <string name="options">Options</string>
+    <string name="login_title">MÀN HÌNH ĐĂNG NHẬP</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">LOGIN</string>
+    <string name="exit_button">EXIT</string>
+    <string name="account_login_title">MAN HINH DANG NHAP</string>
+    <string name="username_label_text">username</string>
+    <string name="username_input_hint_text">Nhap username</string>
+    <string name="password_label_text">password</string>
+    <string name="password_input_hint_text">Nhap password</string>
+    <string name="reset_button">RESET</string>
+</resources>
