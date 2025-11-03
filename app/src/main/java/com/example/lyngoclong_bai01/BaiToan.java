@@ -7,24 +7,19 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import java.util.Locale;
 
 public class BaiToan extends AppCompatActivity {
     Button btCong, btTru, btNhan, btChia, btReset;
     EditText etSo1, etSo2;
-    TextView tVketqua;
+    TextView tvKetQua;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.manhinhbaitoan);
+
         btCong =(Button) findViewById(R.id.btnCong);
         btTru =(Button) findViewById(R.id.btnTru);
         btNhan =(Button) findViewById(R.id.btnNhan);
@@ -33,7 +28,7 @@ public class BaiToan extends AppCompatActivity {
 
         etSo1 =(EditText) findViewById(R.id.editSo1);
         etSo2 =(EditText) findViewById(R.id.editSo2);
-        tVketqua =(TextView) findViewById(R.id.textKetQua);
+        tvKetQua =(TextView) findViewById(R.id.textKetQua);
 
 
 
@@ -54,9 +49,9 @@ public class BaiToan extends AppCompatActivity {
                     double ketQua = so1 + so2;
 
                     if (ketQua == (long) ketQua) {
-                        tVketqua.setText(String.format(java.util.Locale.US, "%d", (long) ketQua));
+                        tvKetQua.setText(String.format(java.util.Locale.US, "%d", (long) ketQua));
                     } else {
-                        tVketqua.setText(String.format("%s", ketQua));
+                        tvKetQua.setText(String.format("%s", ketQua));
                     }
 
                 } catch (NumberFormatException e) {
@@ -83,9 +78,9 @@ public class BaiToan extends AppCompatActivity {
                     double ketQua = so1 - so2;
 
                     if (ketQua == (long) ketQua) {
-                        tVketqua.setText(String.format(java.util.Locale.US, "%d", (long) ketQua));
+                        tvKetQua.setText(String.format(java.util.Locale.US, "%d", (long) ketQua));
                     } else {
-                        tVketqua.setText(String.format("%s", ketQua));
+                        tvKetQua.setText(String.format("%s", ketQua));
                     }
 
                 } catch (NumberFormatException e) {
@@ -111,9 +106,9 @@ public class BaiToan extends AppCompatActivity {
                     double ketQua = so1 * so2;
 
                     if (ketQua == (long) ketQua) {
-                        tVketqua.setText(String.format(java.util.Locale.US, "%d", (long) ketQua));
+                        tvKetQua.setText(String.format(java.util.Locale.US, "%d", (long) ketQua));
                     } else {
-                        tVketqua.setText(String.format("%s", ketQua));
+                        tvKetQua.setText(String.format("%s", ketQua));
                     }
 
                 } catch (NumberFormatException e) {
@@ -145,9 +140,9 @@ public class BaiToan extends AppCompatActivity {
                     double ketQua = so1 / so2;
 
                     if (ketQua == (long) ketQua) {
-                        tVketqua.setText(String.format(java.util.Locale.US, "%d", (long) ketQua));
+                        tvKetQua.setText(String.format(java.util.Locale.US, "%d", (long) ketQua));
                     } else {
-                        tVketqua.setText(String.format("%s", ketQua));
+                        tvKetQua.setText(String.format("%s", ketQua));
                     }
 
                 } catch (NumberFormatException e) {
@@ -162,7 +157,7 @@ public class BaiToan extends AppCompatActivity {
             public void onClick(View v) {
                 etSo1.setText("");
                 etSo2.setText("");
-                tVketqua.setText("0");
+                tvKetQua.setText("0");
                 Toast.makeText(BaiToan.this, "Bạn đã reset", Toast.LENGTH_SHORT).show();
             }
         });
