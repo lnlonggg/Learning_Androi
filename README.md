@@ -1,4 +1,4 @@
-# Báo cáo môn học: Công nghệ lập trình đa nền tảng cho ứng dụng di động
+# Môn học: Công nghệ lập trình đa nền tảng cho ứng dụng di động
 
 Đây là kho lưu trữ (repository) chứa bài tập, project cuối kỳ và các tài liệu liên quan trong quá trình học tập môn **Công nghệ lập trình đa nền tảng cho ứng dụng di động** (Mã HP: 010100185304).
 
