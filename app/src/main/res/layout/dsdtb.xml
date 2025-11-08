@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách Điểm - Lý Ngọc Long"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:background="#EEFF41"
+        android:textColor="@color/black"
+        >
+    </TextView>
+
+    <ListView
+        android:id="@+id/lvdtb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#56008296"
+        android:padding="16dp"
+        >
+    </ListView>
+    <TextView
+        android:id="@+id/tvKqDtb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="0"
+        >
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#37000000"
+        android:padding="16dp">
+        <Button
+            android:id="@+id/btTong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tính ĐTB"
+            android:textSize="20sp"
+            android:backgroundTint="#FFEB3B"
+            android:textColor="#673AB7"
+            android:layout_marginRight="50dp"/>
+        <Button
+            android:id="@+id/btSL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng"
+            android:textSize="20sp"
+            android:backgroundTint="#E91E63"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>
