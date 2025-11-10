@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "LyNgocLong_Bai01"
+rootProject.name = "LyNgocLong_22103100235_LTUD"
 include(":app")
  
