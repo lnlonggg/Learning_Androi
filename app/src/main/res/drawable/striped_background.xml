@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Lớp nền màu cam nhạt -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFC107" />
+        </shape>
+    </item>
+
+    <!-- Các sọc màu cam đậm -->
+    <item android:left="0dp" android:width="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F57F17" />
+        </shape>
+    </item>
+    <item android:left="60dp" android:width="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F57F17" />
+        </shape>
+    </item>
+    <item android:left="120dp" android:width="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F57F17" />
+        </shape>
+    </item>
+    <item android:left="180dp" android:width="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F57F17" />
+        </shape>
+    </item>
+    <item android:left="240dp" android:width="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F57F17" />
+        </shape>
+    </item>
+    <item android:left="300dp" android:width="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F57F17" />
+        </shape>
+    </item>
+    <item android:left="360dp" android:width="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F57F17" />
+        </shape>
+    </item>
+     <item android:left="420dp" android:width="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F57F17" />
+        </shape>
+    </item>
+</layer-list>

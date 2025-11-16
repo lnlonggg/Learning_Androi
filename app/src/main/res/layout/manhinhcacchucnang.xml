@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:gravity="center"
+        android:text="Danh mục các chức năng"
+        android:textAllCaps="true"
+        android:textColor="#00BCD4"
+        android:textSize="28sp">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#169C27B0"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/nhantin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhắn tin"
+            android:textColor="#3AB755"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/goidien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gọi điện"
+            android:textColor="#2196F3"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/monhac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mở nhạc"
+            android:textColor="#B73A3A"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/luoiweb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lướt Web"
+            android:textColor="#673AB7"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/dinhvi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Định vị"
+            android:textColor="#FF9800"
+            android:textSize="20sp" />
+        <RadioButton
+            android:id="@+id/moanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mo anh"
+            android:textColor="#FF9800"
+            android:textSize="20sp" />
+    </RadioGroup>
+</LinearLayout>

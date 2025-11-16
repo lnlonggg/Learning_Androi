@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/themquocgia"
+    android:title="add"
+    />
+
+    <item android:id="@+id/xoaquocgia"
+        android:title="delete"
+        />
+
+    <item android:id="@+id/thoat"
+        android:title="exit"
+        />
+    <item android:id="@+id/truyendl"
+        android:title="Truyen du lieu"
+        />
+
+</menu>
