@@ -25,17 +25,13 @@ public class MinhHoaQLQGCusTom extends AppCompatActivity {
 
         listView = findViewById(R.id.lvquocgia);
 
-        // Create sample data
         data = new ArrayList<>();
         data.add(new Qgia("Việt Nam", 98000000));
         data.add(new Qgia("Hàn Quốc", 51000000));
         data.add(new Qgia("Nhật Bản", 126000000));
         data.add(new Qgia("Hoa Kỳ", 331000000));
 
-        // Initialize adapter
         adapter = new QgiaAdapter(this, data);
-
-        // Set adapter to ListView
         listView.setAdapter(adapter);
     }
 
