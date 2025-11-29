@@ -14,6 +14,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class ActivityChinh extends AppCompatActivity {
@@ -44,7 +48,8 @@ ArrayAdapter<String> adapterKH;
                 "    \"So dien thoai\" : \"30124\"\n" +
                 "  }\n" +
                 "]";
-        readKHjson(xaujson);
+//        readKHjson(xaujson);
+        loadfile();
         adapterKH = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dataListKH);
         lvKhachHang.setAdapter(adapterKH);
     }
@@ -59,6 +64,31 @@ ArrayAdapter<String> adapterKH;
                 dataListKH.add(name + " - " + phone);
             }
 
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    private void loadfile(){
+        try {
+            InputStream is = getResources().openRawResource(R.raw.customer);
+            BufferedReader bf = new BufferedReader(new InputStreamReader(is));
+            StringBuilder bd = new StringBuilder();
+            String dong;
+            while ((dong = bf.readLine()) != null){
+                bd.append(dong);
+            }
+            //Giong bai chuoi
+            String json = bd.toString();
+            JSONArray array = new JSONArray(json);
+            for (int i = 0; i < array.length(); i++) {
+                JSONObject object = array.getJSONObject(i);
+                String name = object.getString("Ten");
+                String phone = object.getString("So dien thoai");
+                dataListKH.add(name + " - " + phone);
+            }
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         } catch (JSONException e) {
             throw new RuntimeException(e);
         }
