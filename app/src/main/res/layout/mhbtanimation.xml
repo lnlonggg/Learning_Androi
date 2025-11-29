@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bai Tap Animation"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/imgHienThi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/mbbanklogo"
+        android:layout_margin="20dp"
+        android:background="#EEEEEE"/>
+    <Button
+        android:id="@+id/btnXoay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài 1: Xoay ảnh (Rotate)"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bài 3: Ẩn (Fade Out)"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/btnHien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hiện (Fade In)"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDiChuyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài 4: Di chuyển (Translate)"/>
+
+    <Button
+        android:id="@+id/btnToHop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài 5: Chạy tổ hợp (Set)"
+        android:backgroundTint="#FF6200"/>
+</LinearLayout>
