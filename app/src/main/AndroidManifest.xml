@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LyNgocLong_Bai01">
         <activity
+            android:name=".QLHangHoa"
+            android:exported="false" />
+        <activity
             android:name=".DsachHangHoa"
             android:exported="false" />
         <activity
@@ -40,7 +43,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".QLHangHoa"
+            android:name=".ActivityChinh"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
