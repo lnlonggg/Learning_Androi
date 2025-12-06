@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LyNgocLong_Bai01">
         <activity
+            android:name=".BTAnimation"
+            android:exported="false" />
+        <activity
             android:name=".ActivityChinh"
             android:exported="false" />
         <activity
@@ -46,11 +49,10 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".BTAnimation"
+            android:name=".Sqliteqlsp"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

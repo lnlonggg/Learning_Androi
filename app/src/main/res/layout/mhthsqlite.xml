@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên sản phẩm"
+        android:height="50dp"
+        android:id="@+id/editName">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mã sản phẩm"
+        android:height="50dp"
+        android:id="@+id/editDESC">
+    </EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Sản phẩm"
+        android:backgroundTint="#06894A"
+        android:id="@+id/btnThemSp">
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mở nhạc"
+        android:backgroundTint="#FF5252"
+        android:id="@+id/btnMonhac">
+    </Button>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvProducts"
+        android:background="#43FFFF00">
+    </ListView>
+</LinearLayout>
